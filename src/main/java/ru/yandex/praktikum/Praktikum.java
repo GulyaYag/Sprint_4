@@ -6,7 +6,7 @@ public class Praktikum {
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         Account account = new Account(name);
-        System.out.println(account.checkNameToEmboss(name));;
+        System.out.println(account.checkNameToEmboss(name));
     }
 }
         /*
