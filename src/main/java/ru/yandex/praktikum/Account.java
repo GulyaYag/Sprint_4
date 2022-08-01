@@ -7,7 +7,7 @@ public class Account {
         this.name = name;
     }
     public boolean checkNameToEmboss(String name) {
-      if ((name.length() >= 3) && (name.length() <= 19) && (name.matches("^[A-ЯЁ]*[а-яё]*\\s[A-ЯЁ]*[а-яё]*$"))) {
+      if ((name.length() >= 3) && (name.length() <= 19) && (name.matches("^[A-ЯЁ]*[а-яё]*\\s[A-ЯЁ]*[а-яё]*$") && (!name.equals("null")))) {
             return true;
         } else {
             return false;
