@@ -25,6 +25,10 @@ public class AccountTests {
                 {"Имя  Фамилия", false},
                 {"И ", false},
                 {"Имяяяя Фамилияяяяяяя", false},
+                {"Имяяяя Фамилия Имя", false},
+                {"", false},
+
+
         };
     }
 
