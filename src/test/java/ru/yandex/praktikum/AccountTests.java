@@ -28,7 +28,6 @@ public class AccountTests {
                 {"Имяяяя Фамилия Имя", false},
                 {"", false},
                 {"null", false},
-
         };
     }
 
