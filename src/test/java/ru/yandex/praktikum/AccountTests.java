@@ -10,6 +10,7 @@ import io.qameta.allure.junit4.DisplayName;
 public class AccountTests {
     private final String nameText;
     private final boolean result;
+    Account name;
 
     public AccountTests(String nameText, boolean result) {
         this.nameText = nameText;
@@ -27,7 +28,7 @@ public class AccountTests {
                 {"Имяяяя Фамилияяяяяяя", false},
                 {"Имяяяя Фамилия Имя", false},
                 {"", false},
-                {"null", false},
+                {null, false},
         };
     }
 
@@ -39,4 +40,12 @@ public class AccountTests {
         boolean actual = account.checkNameToEmboss(nameText);
         Assert.assertEquals(result, actual);
     }
+    @DisplayName("Validation of exception")
+    @Description("Checking exception")
+    @Test (expected = NullPointerException.class)
+    public void NullTrowsException() throws NullPointerException {
+        name.validate();
+    }
 }
+
+
