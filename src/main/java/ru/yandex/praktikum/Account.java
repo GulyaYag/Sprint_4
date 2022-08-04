@@ -8,26 +8,13 @@ public class Account {
 
     public boolean checkNameToEmboss(String name) {
         try {
-            return (name.length() >= 3) && (name.length() <= 19) && (name.matches("^[A-ЯЁ]*[а-яё]*\\s[A-ЯЁ]*[а-яё]*$") && (name != null));
+            return (name.length() >= 3) && (name.length() <= 19) && (name.matches("^[A-ЯЁ]*[а-яё]*\\s[A-ЯЁ]*[а-яё]*$"));
         } catch (NullPointerException e) {
             System.out.println("Данные отсуствуют");
             }
         return false;
     }
-    public void validate() {
-    }
 }
-
-
-
-
-
-
-
-        
-
-
-
 
         /*
              Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
